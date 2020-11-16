@@ -1,0 +1,10 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+@*When we do not explicitly specify the layout i do receive the _layout view that this application has.How
+    does this happen it has happend because of bit of magical file that exists here inside of pages folder 
+    and this is the magical file._ViewStart.CSHTML.
+    when asp.net core goes to render a view or a page it also going to look for an_Viewstate file and then
+    it is also going to execute the code inside of the _viewstate. If i want a default view for every page in the app
+    i can place the layout in viewstart *@

@@ -1,0 +1,17 @@
+﻿@model int
+
+<div class="well">
+    There are @Model restaurants here. <a asp-page="/Restaurants/List">See them all</a>
+</div>
+
+@*Now need to create a view for my view component 
+    Viewcomponent class which will use the restaurantdata services to build a model which is count
+    and we tell the asp.net core framework we want to render the default view using this model,the count
+    asp.net core should find this view "Default.cshtml"when it executes this view it will receive just the 
+    snippet of html and now we just have to pick a location where we want it to render
+    for rendering we can use special tag-helper "<vc-name of the component> in layout.cs but first we have to 
+    go into _viewimports file and say we want to register some tag helpers from odetofood project and add out project 
+    to select all the taghelpers from this project.
+    This will allow me to do is come into view or the page where ever i want to use this view  component and i'm going to place 
+    this into the layout page '
+    *@

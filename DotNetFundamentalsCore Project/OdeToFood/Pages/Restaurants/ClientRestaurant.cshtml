@@ -1,0 +1,54 @@
+﻿@page
+@model OdeToFood.Pages.Restaurants.ClientRestaurantModel
+@{
+    ViewData["Title"] = "ClientRestaurants";
+}
+
+<h2>Client Restaurants</h2>
+<table class="table" id="restaurants">
+</table>
+
+
+@section Scripts {
+
+    @*<environment include="Development">
+        <script src="~/datatables/js/jquery.dataTables.js"></script>
+        <script src="~/datatables/js/dataTables.bootstrap.js"></script>
+        <link href="~/datatables/css/dataTables.bootstrap.css" rel="stylesheet" />
+    </environment>
+
+    <environment exclude="Development">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.22/datatables.min.css" />
+
+        <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.22/datatables.min.js"></script>
+    </environment>*@
+        <script src="~/datatables/js/jquery.dataTables.js"></script>
+        <script src="~/datatables/js/dataTables.bootstrap.js"></script>
+        <link href="~/datatables/css/dataTables.bootstrap.css" rel="stylesheet" />
+
+    <script>
+        $(function () {
+
+            var cuisines = ["None", "Mexican", "Italian", "Indian", "American"]
+
+            $.ajax("/api/Restaurants/",
+                { method: "get" })
+                .then(function (response) {
+                        $("#restaurants").dataTable({
+                                data: response,
+                                columns: [
+                                    { "data": "name" },
+                                    { "data": "location" },
+                                    {
+                                        "data": "cuisine", "render": function (data) {
+                                            return cuisines[data];
+                                        }
+                                    }
+                                ]
+                        });
+                });
+        });
+        @*This must hit the endpoint when called upon and that response should be saved in the table directory
+            of the broowser and it returns httpstatuscode 404 when the api shupposed to be hit not found*@
+    </script>
+}

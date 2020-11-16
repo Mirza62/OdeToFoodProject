@@ -1,0 +1,41 @@
+﻿@page "{restaurantId:int?}"
+@model OdeToFood.Pages.Restaurants.EditModel
+@{
+    ViewData["Title"] = "Editing Restaurants";
+}
+
+<h2>Editing @Model.Restaurant.Name</h2>
+
+<form method="post">
+    <input type="hidden" asp-for="Restaurant.Id"/>
+    <div class="form-group">
+        <label asp-for="Restaurant.Name"></label>
+        <input asp-for="Restaurant.Name" class="form-control"/>
+        @*To Show User Validation Error we are using Asp-Validationfor-*@
+        <span class="text-danger" asp-validation-for="Restaurant.Name"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Restaurant.Location"></label>
+        <input asp-for="Restaurant.Location" class="form-control"/>
+        <span class="text-danger" asp-validation-for="Restaurant.Location"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Restaurant.Cuisine"></label>
+        @*Instead of input using select to use dropdown list
+        options visibility -> asp-items[Ienumerable collection of select list items]
+            two properties 1.text to display,2 value submitted when that entry is chosen
+                now need to build a collection of select list item by html property
+                    getenumselectlist build a collection of selectlistitem based on enum typeasp-items="Html.GetEnumSelectList<>.[Building inside pagemodel selectlistitems]
+                        asp-for always assume u r working something from the model so no need to provide model there but for asp-items we have to provide as model.cuisines*@
+        <select class="form-control" asp-for="Restaurant.Cuisine"
+                asp-items="Model.Cuisines"></select>
+        <span class="text-danger" asp-validation-for="Restaurant.Cuisine"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+@*This is for client-side validations and rendering validationscriptspartial scripts which are present in the shared folder
+    *@
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
+

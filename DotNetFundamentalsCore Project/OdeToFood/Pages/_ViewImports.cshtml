@@ -1,0 +1,14 @@
+@using OdeToFood
+@namespace OdeToFood.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@*This is another special view.We can add statements that will be included in the compilaion
+    for other razor pages in the project .if want type in odetofood to be included in the cshtml file we add it here.
+    these taghelpers like asp-for asp-page were able to come in razor pages because of this taghelper line.
+    taghelper line means ause all the taghelpers name inside this library(Microsoft.AspNetCore.Mvc.TagHelpers)*@
+@addTagHelper *, OdeToFood
+@*
+     we just have to pick a location where we want it to render
+    for rendering we can use special tag-helper "<vc-name of the component> in layout.cs but first we have to
+    go into _viewimports file and say we want to register some tag helpers from odetofood project and add out project
+    to select all the taghelpers from this project.
+*@

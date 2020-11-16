@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - OdeToFood</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />@*Bootsrap css framework*@
+    <link rel="stylesheet" href="~/css/site.css" />@*Custom site.css*@
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">OdeToFood</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Restaurants/List">Restaurants</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            @*Inside of the view we can invoke another method called render section we can have multiple calls here
+        each section will have name lets call this one footer section .now we are going to allow pages like
+        list details edit to plug content into this section.in the section section we are calling this section is not required
+        in other words the list and the dit page they are not required to provide me this section.and the list page wanted to
+        render this footer all it needs to define a section using @section
+            *@
+            @*we just have to pick a location where we want it to render a viewcomponent
+        for rendering we can use special tag-helper "<vc-name of the component(kebab case[second capital will become small and -infront of it])> in layout.cs*@
+            <vc:restaurant-count></vc:restaurant-count>
+            @RenderSection("footer", required: false)
+            &copy; 2020 - OdeToFood - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            @*The wwwroot Folder in the project serves as the content root for your website so images,css files 
+               javascript files all they need to live somewhere inside of wwwroot and if we want to take advantage of features
+                like client-side validation using jquery,jquery and other files need to loaded from these folders isnide of wwwroot
+                *@
+            <img src="~/OdeToFood.png" />
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>@*Script tag to load jquery,bootstrap.js,site.js file*@
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
+
+@*
+Three tips about _Layout 
+    1.It doesn not need to live in shared folder
+    2.It is not a razor page [A razor page can be called a page where there is @page direcvtive 
+    at the beginning of the page]
+    3._underscore before the pafe is just an indication this chshtml file render does not exist
+    (there is no cshtml.cs page model for this).
+
+    The job of the _Layout is to control the structure of my user interface.
+    What are the common elements that need to appear on ever page in user interface ?
+    What scripts or css file do i need to include on every page?
+    The answer is that type of content goes inside layout.
+    There are two valid questions here right now ?
+    1.How does a page like restaurant list no where to plug in contenst like this table of restaurants ?
+    2.how could that restaurant list page choose a different layout page or not to use this layout page?
+    Exactly how did this layout page comes into play
+
+
+    inside @renderbody the page will render in the layout.
+
+*@

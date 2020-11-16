@@ -1,0 +1,92 @@
+﻿@page
+@model OdeToFood.Pages.Restaurants.ListModel
+@{
+    ViewData["Title"] = "Restaurants";
+}
+<head>
+    <script src="https://kit.fontawesome.com/da94fa27ef.js" crossorigin="anonymous"></script>
+</head>
+<h2>Restaurants</h2>
+<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            @*in order to get the search input and pass it to the method we have to use model binding and first we
+                have to add a name to our input we can pass it to our method
+                once user entered a query in search it should remain there for user to check  after what they gave input that
+                can be done by "value"
+                Now,that SearchTerm is declared we need to assign value of my input to that searchterm
+                name ="SearchTerm" Value="SearchTerm" but we have a special tag helper asp-for.
+            *@
+            <input type="search" class="form-control" asp-for="SearchTerm" />
+            <div class="input-group-append">
+                <button class="btn btn-secondary">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <!--<span class="input-group-btn">
+                <button class="btn btn-primary">-->
+            @*<i class="fas fa-search"></i> *@
+            <!--<i class="glyphicon glyphicon-search"></i>
+                </button>
+            </span>-->
+        </div>
+    </div>
+</form>
+
+
+@*i CAN USE from any other page to display information about a restaurant
+    We will use this partial view in the list of restaurant so instead of displaying all our restaurants in our table
+    display our restaurant in the series of panel i.e for each restaurant in model we want to show this partial view _
+    summary .so inside of list.cshtml so removing table completely instead looping through each restaurant and pa
+    ssing model to the the partial view _Summary.*@
+
+@*<table>
+    existed here which is now Below the page*@
+@foreach (var restaurant in Model.Restaurants)
+{
+    <partial name="_Summary" model="restaurant" />
+}
+
+<a asp-page=".\Edit" class="btn btn-primary">Add New</a>
+@* I am just using this section to check how to include part of a section from the list into layout oage by adding
+    @section.
+*@
+@section footer {
+    <div>@Model.Message</div>
+}
+
+@*now we know everything inside the razor page cshtml is going to rendered out whenever we have render body
+    inside of the layout unless we have that content wrapped with an @section directive that i can render in
+    to this alternative sections that a layout view might provide
+    Answerr to the question how does a view select this layout view ?
+*@
+
+@*<table class="table">
+         @foreach (var restaurant in Model.Restaurants)
+         {
+             <tr>
+                 <td>@restaurant.Name</td>
+                 <td>@restaurant.Location</td>
+                 <td>@restaurant.Cuisine</td>
+                 <td>
+                     @*href="/Restaurants/Details?restaurantId = @restaurant.Id"
+                 <a class="btn btn-lg"
+                    asp-page="./Detail" asp-route-restaurantId="@restaurant.Id">
+                     Details
+                     <i class="glyphicon glyphicon-zoom-in"></i>
+                 </a>
+                 <a class="btn btn-lg" asp-page="./Edit" asp-route-restaurantId="@restaurant.Id">
+                     <i class="glyphicon glyphicon-search">Edit</i>
+                 </a>
+                 <a class="btn btn-lg" asp-page="./Delete" asp-route-restaurantId="@restaurant.Id">
+                     <i class="glyphicon glyphicon-search">Delete</i>
+                 </a>
+                 </td>
+             </tr>
+         }
+    </table>*@
+
+
+@*What happens if i want to have a reusable piece of ui that i can use from  everywhere and i want to make that a little more
+    autonomous  a little more independent what i want some thing like a partial view but a partial view that has the capability
+    to do its own data access that's when we can turn to ViewComponents. *@

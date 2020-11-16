@@ -1,0 +1,19 @@
+﻿@page  "{restaurantId}"
+@model OdeToFood.Pages.Restaurants.DeleteModel
+@*Inside this code block we can invoke methods that are available through a razor page as well as set properties on 
+    on my page.what this is doing is setting my property on my razor page that says Layout = null.in asp.net saying i do not want a layout page
+
+    *@
+@{
+    ViewData["Title"] = "Delete";
+}
+<body>
+    <h2>Delete!</h2>
+    <div class="alert alert-danger">
+        Are you sure you want to delete @Model.Restaurant.Name
+    </div>
+    <form method="post">
+        <button type="submit" class="btn btn-danger">Yes!</button>
+        <a asp-page="List" class="btn btn-primary">Cancel</a>
+    </form>
+</body>
