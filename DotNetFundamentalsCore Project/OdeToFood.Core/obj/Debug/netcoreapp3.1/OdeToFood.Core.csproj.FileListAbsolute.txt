@@ -1,0 +1,18 @@
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Core\bin\Debug\netcoreapp3.1\OdeToFood.Core.deps.json
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Core\bin\Debug\netcoreapp3.1\OdeToFood.Core.dll
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Core\bin\Debug\netcoreapp3.1\OdeToFood.Core.pdb
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Core.csprojAssemblyReference.cache
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Core.AssemblyInfoInputs.cache
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Core.AssemblyInfo.cs
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Core.csproj.CoreCompileInputs.cache
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Core.dll
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Core.pdb
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Core\bin\Debug\netcoreapp3.1\OdeToFood.Core.deps.json
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Core\bin\Debug\netcoreapp3.1\OdeToFood.Core.dll
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Core\bin\Debug\netcoreapp3.1\OdeToFood.Core.pdb
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Core.csprojAssemblyReference.cache
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Core.AssemblyInfoInputs.cache
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Core.AssemblyInfo.cs
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Core.csproj.CoreCompileInputs.cache
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Core.dll
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Core\obj\Debug\netcoreapp3.1\OdeToFood.Core.pdb

@@ -1,0 +1,30 @@
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Data\bin\Debug\netcoreapp3.1\OdeToFood.Data.deps.json
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Data\bin\Debug\netcoreapp3.1\OdeToFood.Data.runtimeconfig.json
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Data\bin\Debug\netcoreapp3.1\OdeToFood.Data.runtimeconfig.dev.json
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Data\bin\Debug\netcoreapp3.1\OdeToFood.Data.dll
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Data\bin\Debug\netcoreapp3.1\OdeToFood.Data.pdb
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Data\bin\Debug\netcoreapp3.1\OdeToFood.Core.dll
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Data\bin\Debug\netcoreapp3.1\OdeToFood.Core.pdb
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Data\obj\Debug\netcoreapp3.1\OdeToFood.Data.csprojAssemblyReference.cache
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Data\obj\Debug\netcoreapp3.1\OdeToFood.Data.AssemblyInfoInputs.cache
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Data\obj\Debug\netcoreapp3.1\OdeToFood.Data.AssemblyInfo.cs
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Data\obj\Debug\netcoreapp3.1\OdeToFood.Data.csproj.CoreCompileInputs.cache
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Data\obj\Debug\netcoreapp3.1\OdeToFood.Data.csproj.CopyComplete
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Data\obj\Debug\netcoreapp3.1\OdeToFood.Data.dll
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Data\obj\Debug\netcoreapp3.1\OdeToFood.Data.pdb
+C:\Users\MirzaAtifBaig\source\repos\OdeToFood.Data\obj\Debug\netcoreapp3.1\OdeToFood.Data.genruntimeconfig.cache
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Data\bin\Debug\netcoreapp3.1\OdeToFood.Data.deps.json
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Data\bin\Debug\netcoreapp3.1\OdeToFood.Data.runtimeconfig.json
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Data\bin\Debug\netcoreapp3.1\OdeToFood.Data.runtimeconfig.dev.json
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Data\bin\Debug\netcoreapp3.1\OdeToFood.Data.dll
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Data\bin\Debug\netcoreapp3.1\OdeToFood.Data.pdb
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Data\bin\Debug\netcoreapp3.1\OdeToFood.Core.dll
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Data\bin\Debug\netcoreapp3.1\OdeToFood.Core.pdb
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Data\obj\Debug\netcoreapp3.1\OdeToFood.Data.csprojAssemblyReference.cache
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Data\obj\Debug\netcoreapp3.1\OdeToFood.Data.AssemblyInfoInputs.cache
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Data\obj\Debug\netcoreapp3.1\OdeToFood.Data.AssemblyInfo.cs
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Data\obj\Debug\netcoreapp3.1\OdeToFood.Data.csproj.CoreCompileInputs.cache
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Data\obj\Debug\netcoreapp3.1\OdeToFood.Data.csproj.CopyComplete
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Data\obj\Debug\netcoreapp3.1\OdeToFood.Data.dll
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Data\obj\Debug\netcoreapp3.1\OdeToFood.Data.pdb
+D:\InnRoad\Microsoft Stream\Ariqt System Docs-20201103T073236Z-001\Ariqt System Docs\Ariqt\VS Projects\OdeToFood.Data\obj\Debug\netcoreapp3.1\OdeToFood.Data.genruntimeconfig.cache
